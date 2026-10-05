@@ -41,7 +41,7 @@
     </section>
 
     <!-- Categorias -->
-    <section id="categorias" class="container mx-auto py-12">
+    <section id="categorias" class="container mx-auto py-12 px-60">
         <h3 class="text-2xl font-bold text-amber-950 mb-6 text-center">Categorias em Destaque</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div class="bg-white rounded-xl shadow p-6 text-center w-95 mx-auto hover:-translate-y-2 hover:scale-105 hover:shadow-lg">
@@ -72,9 +72,9 @@
     </section>
 
     <!-- Produtos -->
-    <section id="produtos" class="container mx-auto py-12 w-95 mx-auto">
+    <section id="produtos" class="container mx-auto py-12 w-320 mx-auto">
         <h3 class="text-2xl font-bold text-amber-950 mb-6 text-center">Nossas Criações</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
             <div class="bg-amber-50 rounded-xl shadow p-4 border border-transparent hover:border-amber-900">
                 <h4 class="font-semibold text-lg text-amber-950">Ursinho Amigurumi</h4>
                 <div class=" flex justify-between pr-2">
