@@ -22,10 +22,11 @@
                         <h2 class="text-xl font-bold text-amber-800">{{ $categoria->nome }}</h2>
                         <p class="text-sm text-stone-600 mb-2">{{ $categoria->descricao }}</p>
 
-                        <a href="{{ url('/produtos?categoria='.$categoria->id) }}" 
-                           class="mt-3 inline-block bg-amber-950 text-white px-4 py-2 rounded hover:bg-amber-800">
-                            Ver Produtos
+                        <a href="{{ route('categorias.cshow', $categoria->id) }}" 
+                        class="mt-3 inline-block bg-amber-950 text-white px-4 py-2 rounded hover:bg-amber-800">
+                         Ver Produtos
                         </a>
+
                     </div>
                 </div>
             @endforeach

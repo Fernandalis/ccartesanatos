@@ -131,7 +131,7 @@ class ProdutoSeeder extends Seeder
         DB::table('produtos')->insert([
             'nome' => 'Chaveiro amigurumi',
             'descricao' => 'Bichinhos fofos de crochê, ideal para lembrancinhas.',
-            'imagem' => 'img/prod15.jpg',
+            'imagem' => 'img/prod15.jpeg',
             'preco' => 22.00,
             'categoria_id' => 3,
         ]);
@@ -140,7 +140,7 @@ class ProdutoSeeder extends Seeder
         DB::table('produtos')->insert([
             'nome' => 'Estojo Baú Multiuso de Tecido',
             'descricao' => 'Estojo com formato estruturado e grande capacidade interna, excelente para itens de papelaria ou higiene.',
-            'imagem' => 'img/prod16.jpg',
+            'imagem' => 'img/prod16.jpeg',
             'preco' => 45.00,
             'categoria_id' => 4,
         ]);
@@ -148,7 +148,7 @@ class ProdutoSeeder extends Seeder
         DB::table('produtos')->insert([
             'nome' => 'Cesto Organizador de Crochê em Fio de Malha',
             'descricao' => 'Cesto firme e artesanal, ideal para organizar maquiagens, fios, brinquedos ou miudezas da casa.',
-            'imagem' => 'img/prod17.jpg',
+            'imagem' => 'img/prod17.jpeg',
             'preco' => 48.00,
             'categoria_id' => 4,
         ]);
@@ -164,7 +164,7 @@ class ProdutoSeeder extends Seeder
         DB::table('produtos')->insert([
             'nome' => 'Nécessaire em Tecido com Acolchoamento',
             'descricao' => 'Bolsa organizadora interna com proteção macia para carregar cosméticos ou acessórios em viagens.',
-            'imagem' => 'img/prod19.jpg',
+            'imagem' => 'img/prod19.jpeg',
             'preco' => 52.00,
             'categoria_id' => 4,
         ]);
@@ -175,6 +175,13 @@ class ProdutoSeeder extends Seeder
             'imagem' => 'img/prod20.jpeg',
             'preco' => 58.00,
             'categoria_id' => 4,
+        ]);
+
+        DB::table('produtos')->insert([
+            'nome' => 'Produtos personalizados',
+            'descricao' => 'Entre em contato conosco e encomende o produto que você deseja',
+            'imagem' => 'img/Amigulogo.png',
+            'categoria_id' => 5,
         ]);
     }
 }

@@ -22,7 +22,7 @@
             <a href="/" class="hover:text-amber-400 ">Início</a>
             <a href="/categorias" class="hover:text-amber-400">Categorias</a>
             <a href="/produtos" class="hover:text-amber-400">Produtos</a>
-            <a href="#contato" class="hover:text-amber-400 flex items-center gap-2">Contato 
+            <a href="/sobre" class="hover:text-amber-400 flex items-center gap-2">Sobre 
             </a>
 
             <a href="#carrinho" class="hover:text-amber-400 flex items-center gap-2"> 
@@ -63,9 +63,9 @@
     <div class="pl-15 py-5">
       <h2 class="text-lg font-bold mb-2">A C&C Artesanatos</h2>
       <ul class="space-y-2">
-        <li><a href="#sobre" class="hover:text-amber-400">Quem somos</a></li>
-        <li><a href="#produtos" class="hover:text-amber-400">Produtos</a></li>
-        <li><a href="#categorias" class="hover:text-amber-400">Categorias</a></li>
+        <li><a href="/sobre" class="hover:text-amber-400">Quem somos</a></li>
+        <li><a href="/produtos" class="hover:text-amber-400">Produtos</a></li>
+        <li><a href="/categorias" class="hover:text-amber-400">Categorias</a></li>
       </ul>
     </div>
 
