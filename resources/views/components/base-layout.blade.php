@@ -20,8 +20,8 @@
         <!-- Menu -->
         <nav class="flex space-x-6 text-lg gap-8 font-bold">
             <a href="/" class="hover:text-amber-400 ">Início</a>
-            <a href="#categorias" class="hover:text-amber-400">Categorias</a>
-            <a href="#produtos" class="hover:text-amber-400">Produtos</a>
+            <a href="/categorias" class="hover:text-amber-400">Categorias</a>
+            <a href="/produtos" class="hover:text-amber-400">Produtos</a>
             <a href="#contato" class="hover:text-amber-400 flex items-center gap-2">Contato 
             </a>
 
@@ -37,135 +37,11 @@
         </nav>
     </header>
 
-    <!-- Banner -->
-     <!-- Banner / Carrossel -->
-<section class="relative w-full h-80 overflow-hidden">
-  <div id="carousel" class="absolute inset-0 flex transition-transform duration-700 ease-in-out">
-   <!-- Slide 1 -->
-<div class="w-full flex-shrink-0 bg-gradient-to-r from-amber-100 to-rose-100 flex items-center justify-center p-6">
-  
-  <!-- Imagem -->
-  <img src="{{ asset('img/Prodcroche.png') }}" alt="Banner 1" class="w-[570px] h-[320px] object-contain mr-4">
-  
-  <!-- Texto -->
-  <div class="text-left">
-    <h1 class="text-3xl font-bold text-amber-900 mb-2">Produtos feitos de Crochê</h1>
-    <h2 class="text-xl text-stone-700 mb-4">Em estoque e sob encomenda</h2>
-    <a href="#produtos" >    </a>
-  </div>
-</div>
-
-    <!-- Slide 2 -->
-    <div class="w-full flex-shrink-0 bg-gradient-to-r from-amber-100 to-rose-100 flex items-center justify-center p-6">
-    
-    <!-- Texto -->
-  <div class="text-left mr-4">
-    <h1 class="text-3xl font-bold text-amber-900 mb-2 flex">Produtos para <br>decoração  do seu lar</h1>
-    <h2 class="text-xl text-stone-700 mb-4">Adicione um toque de carinho</h2>
-    <a href="#produtos" >    </a>
-  </div>
-
-   <!-- Imagem-->
-        <img src="{{ asset('img/declar.png') }}" alt="Banner 1" class="w-[570px] h-[320px] object-contain mr-4">
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="w-full flex-shrink-0 bg-gradient-to-r from-amber-100 to-rose-100 flex items-center justify-center p-6">
-        <img src="{{ asset('img/Amigur.jpeg') }}" alt="Banner 1" class="w-[570px] h-[320px] object-contain mr-4">
-
-        <!-- Texto -->
-        <div class="text-left">
-          <h1 class="text-3xl font-bold text-amber-900 mb-2">Amigurumis</h1>
-          <h2 class="text-xl text-stone-700 mb-4">Diversos formatos</h2>
-          <a href="#produtos" >    </a>
-        </div>
-    </div>
-  </div>
-</section>
-
-<script>
-  const carousel = document.getElementById('carousel');
-  let index = 0;
-  const totalSlides = 3; // número de slides
-
-  setInterval(() => {
-    index = (index + 1) % totalSlides;
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-  }, 3000); // troca a cada 3 segundos
-</script>
-
-    <!-- <section class="bg-gradient-to-r from-amber-100 to-rose-100 py-16 text-center">
-        <h2 class="text-4xl font-bold text-amber-950 mb-4 inline-block px-2 rounded">Peças únicas feitas à mão</h2>
-        <p class="text-stone-600 mb-6">Amigurumis, bolsas e costura criativa para encantar sua rotina.</p>
-        <a href="#produtos" class="bg-amber-950 hover:bg-rose-600 text-white px-6 py-3 rounded-lg shadow">
-            Ver Coleção
-        </a>
-    </section> -->
-
-    <!-- Em destaque -->
-    <section id="destaque" class="container mx-auto py-12 px-60">
-        <h3 class="text-2xl font-bold text-amber-950 mb-6 text-center">Produtos em Destaque</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white rounded-xl shadow p-6 text-center w-95 mx-auto hover:-translate-y-2 hover:scale-105 hover:shadow-lg">
-                <a href="Amigurumis"> </a>
-                <img class="mx-auto mb-4 rounded-xl w-70 h-70 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQjV-d7SgJb1rOKYD7u8YZv7Ijs32OlylcGimmAwyQrw&s=10" alt="">
-                <h4 class="text-xl font-semibold text-amber-950 mb-2 hover:text-stone-500">Amigurumis</h4>
-                <p class="text-stone-500">Bichinhos fofos feitos em crochê.</p>
-            </div>
-            <div class="bg-white rounded-xl shadow p-6 text-center w-95 mx-auto hover:-translate-y-2 hover:scale-105 hover:shadow-lg">
-                <a href="Bolsas"></a>
-                <img class="mx-auto mb-4 rounded-xl w-70 h-70 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQraunGYcGTKmuPAuT21DZ6fumdoiOGu7OqbpSBjmiUxg&s=10" alt="">
-                <h4 class="text-xl font-semibold text-amber-950 mb-2 hover:text-stone-500">Bolsas de Tecido</h4>
-                <p class="text-stone-500">Ecobags e bolsas artesanais.</p>
-            </div>
-            <div class="bg-white rounded-xl shadow p-6 text-center w-95 mx-auto hover:-translate-y-2 hover:scale-105 hover:shadow-lg">
-                <a href="Acessórios"></a>
-                <img class="mx-auto mb-4 rounded-xl w-70 h-70 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2e8ZfxicI2kkMx1guWz09jqipabyll99OTRdYY-rCqA&s=10" alt="">
-                <h4 class="text-xl font-semibold text-amber-950 mb-2 hover:text-stone-500">Acessórios</h4>
-                <p class="text-stone-500">Conheça nossos produtos.</p>
-            </div>
-            <div class="bg-white rounded-xl shadow p-6 text-center w-95 mx-auto hover:-translate-y-2 hover:scale-105 hover:shadow-lg">
-                <a href="Decoração"></a>
-                <img class="mx-auto mb-4 rounded-xl w-70 h-70 object-cover" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5QyRZ8wqWvt_j3s2ultxTZ_0u_3WSish12G7ZZg-zyI09EgGWNo84-AD2&s=10" alt="">
-                <h4 class="text-xl font-semibold text-amber-950 mb-2 hover:text-stone-500">Decoração/Casa</h4>
-                <p class="text-stone-500">Mantas, tapetes e muito mais.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Categorias -->
-    <section id="categorias" class="container mx-auto py-12 w-320 mx-auto">
-        <h3 class="text-2xl font-bold text-amber-950 mb-6 text-center">Categorias</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
-
-            <div class="bg-amber-50 rounded-xl shadow p-4 border border-transparent hover:border-amber-900">
-                <h4><a href="#saiba mais" class="font-semibold text-lg text-amber-950 hover:text-amber-400"> Moda & Acessórios</a></h4>
-            </div>
-
-            <div class="bg-amber-50 rounded-xl shadow p-4 border border-transparent hover:border-amber-900">
-                <h4> <a href="#saiba mais" class="font-semibold text-lg text-amber-950 hover:text-amber-400">Decoração & Lar</a></h4>
-            </div>
-
-            <div class="bg-amber-50 rounded-xl shadow p-4 border border-transparent hover:border-amber-900">
-                <h4><a href="#saiba mais" class="hover:text-amber-400 font-semibold text-lg text-amber-950"> Mundo Amigurumi </a></h4>
-                
-            </div>
-            <div class="bg-amber-50 rounded-xl shadow p-4 border border-transparent hover:border-amber-900">
-                <h4><a href="#saiba mais" class="font-semibold text-lg text-amber-950 hover:text-amber-400">Organização & Utilidades </a></h4>
-            </div>
-
-            <div class="bg-amber-50 rounded-xl shadow p-4 border border-transparent hover:border-amber-900">
-                <h4><a href="#saiba mais" class="hover:text-amber-400 font-semibold text-lg text-amber-950"> Items personalizados </a></h4>
-            </div>
-
-            <div class="bg-amber-50 rounded-xl shadow p-4 border border-transparent hover:border-amber-900">
-                <h4><a href="#saiba mais" class=" hover:text-amber-400 font-semibold text-lg text-amber-950"> Catálago</a></h4>
-            </div>
-        </div>
-    </section>
+    <main>
+        {{ $slot }}
+    </main>
 
     <!-- Rodapé -->
-     <!-- Rodapé -->
 <footer class="bg-amber-950 text-white py-10 mt-auto">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-sm">
 
@@ -210,12 +86,3 @@
   </div>
   </div>
 </footer>
-
-    <!-- <footer class="bg-amber-950 text-white text-center py-6 mt-auto">
-        <p>&copy; {{ date('Y') }} C & C Artesanatos. Todos os direitos reservados.</p>
-    </footer> -->
-
-</body>
-</html>
-
-
